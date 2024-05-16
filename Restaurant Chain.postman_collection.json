@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "cf7eeb9a-6967-4fd4-9d52-f3ba4ed6bb78",
+		"name": "Restaurant Chain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34599934"
+	},
+	"item": [
+		{
+			"name": "meal",
+			"item": [
+				{
+					"name": "addchef",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "add category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_name\":\"breakfist\",\r\n    \"category_img\":\"https://cdn.vectorstock.com/i/1000x1000/83/13/breakfast-icons-flat-set-with-coffee-time-vector-10088313.webp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addcategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addcategory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
